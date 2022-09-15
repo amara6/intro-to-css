@@ -1,0 +1,21 @@
+h1,h2{
+    color : blue;
+    font-size: 20px;
+}
+
+ol{
+    color : rgb(131, 17, 17);
+ }  
+ .diff{
+    color: blueviolet;
+ }
+ #last{
+    color: yellowgreen;
+    font-size: larger;
+    font-weight: 400;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+ ul{
+    padding: 5px;
+    list-style: none;
+}
