@@ -1,0 +1,12 @@
+what will you want to teach?
+
+- Display properties
+- different Display properties values
+- inline and block properties
+- none properties and visibility properties
+- flex and grid properties
+  - definition
+  - when to use them together
+  - responsiveness
+  - practicals
+  - Assignment

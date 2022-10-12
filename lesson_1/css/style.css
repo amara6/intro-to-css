@@ -1,0 +1,100 @@
+/*
+  Basic of css
+
+  1) Anatomy of CSS
+  2) Understand what a CSS ruleset
+  3) CSS selectors
+  4) Declaration
+  5) Property
+  6) Property values
+
+  Topic: CSS selectors
+  *) tag selectors e.g html tags
+  *) class selectors
+      goal: is to change paragraph 1 and 4  to have different color and background
+
+  *) id selectors
+     it is used to select a unique identifier
+
+  *) CSS properties
+   - padding and margin and the difference
+*/
+* {
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+}
+
+p {
+  /* border: 1px solid red; */
+  /* text-align: start;
+  border-top: 5px solid red;
+  border-right: 5px solid yellow;
+  border-bottom: 5px solid purple;
+  border-left: 5px solid green; */
+
+  /* background: blue; */
+
+  /*
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 3px;
+  */
+  /* padding: 10px 20px 15px 3px; */
+
+  /* padding: 30px; */
+  /* color: red;
+  background: blue;
+  padding: 30px;
+  margin: 20px;
+  font-size: 10px;
+  width: 50px; */
+}
+
+/* h1 {
+  color: green;
+} */
+
+.style-paragraph {
+  color: blue;
+  background: rgb(213, 145, 213);
+}
+
+#style-p2 {
+  color: yellow;
+  background: black;
+}
+section {
+  display: flex;
+  /* margin-bottom: 800px; */
+}
+section h1 {
+  color: green;
+}
+
+section div {
+  padding: 5px;
+  width: 300px;
+  border: 1px solid red;
+}
+.div-2 {
+  background-color: lightgrey;
+  text-align: right;
+}
+.div-2 h1 {
+  color: blue;
+  text-transform: uppercase;
+}
+
+.div-1 h1 {
+  text-transform: capitalize;
+  text-align: center;
+}
+.div-3 {
+  /* text-align: center; */
+  text-align: justify;
+}
+.font-div {
+  margin-bottom: 500px;
+}
