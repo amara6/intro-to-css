@@ -1,21 +1,120 @@
-h1,h2{
-    color : blue;
-    font-size: 20px;
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+body{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 16px;
+   line-height: 1.5;
+   color: #333;
+   background-image: url(images grid);
+}
+img{
+   max-width: 100%;
+   margin-top: 40px;
+   background-color: darkblue;
+}
+h1, h2{
+   margin-bottom:  15px;
+}
+ul{
+   list-style-type: none;
+}
+.container{
+   max-width: 1100px;
+   margin: 0 auto;
+   padding: 0 30px;
+
+}
+.navbar{
+   background: #3474e6;
+   color: white;
+   height: 60px;
+}
+.navbar .logo {
+   font-size: x-large;
+   font-weight: bold;
+}
+.header p {
+   font-size: large;
+   font-weight:lighter;
+   width: fit-content;
+
+}
+.navbar a{
+   color: white; 
+   text-decoration: none;
+   font-size: 18px;
+   font-weight: bold;
+
+}
+.navbar a:hover{
+  color: lightblue; 
+}
+.navbar .container{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 100%;
+}
+.navbar ul{
+   display: flex;
+}
+.navbar ul li {
+   margin-left: 20px;
+}
+.header{
+   background: darkblue;
+   color: white;
+   min-height: 400px;
+}
+.header h1 {
+   font-size: 3rem;
+   font-weight: bold;
+   line-height: 1.2;
+}
+.header img {
+   max-width: 400px;
+}
+.header .container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.boxes .container {
+   display: flex;
+   justify-content: space-between;
+}
+.box {
+   flex: 1;
+   background: darkblue;
+   color: white;
+   border-radius: 10px;
+   margin: 20px 10px;
+   padding: 15px 20px;
+
 }
 
-ol{
-    color : rgb(131, 17, 17);
- }  
- .diff{
-    color: blueviolet;
- }
- #last{
-    color: yellowgreen;
-    font-size: larger;
-    font-weight: 400;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
- }
- ul{
-    padding: 5px;
-    list-style: none;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
