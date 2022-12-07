@@ -1,0 +1,77 @@
+body {
+  background: #000;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  background: #fff;
+  padding: .3rem;
+  width: fit-content;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 1rem;
+  gap: 1.5rem;
+}
+
+@media (min-width: 200px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid div:last-child {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 360px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid div:last-child {
+    grid-column: span 2;
+  }
+}
+
+.grid > * {
+  color: #fff;
+}
+
+
+.grid button {
+  border: none;
+  padding: 0.3rem 0.8rem;
+  font-size: 8px;
+  cursor: pointer;
+}
+
+.uber-cls {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.linkedin-flex {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.linkedin-flex button {
+  border-radius: 13px;
+}
+
+.linkedin-flex button:first-child {
+  background-color: rgb(10, 102, 194);
+  color: #fff;
+}
+
+.linkedin-flex button:last-child {
+  border: .5px solid rgb(10, 102, 194 );
+  color: rgb(10, 102, 194);
+}
