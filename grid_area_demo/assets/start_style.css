@@ -1,0 +1,48 @@
+:root {
+  /* font family */
+  --ff-six-caps: 'Six Caps', sans-serif;
+  --ff-merriweather: 'Merriweather', serif;
+
+  /* font size */
+  --fs-base: 1rem;
+  --fs-h1: 3.75rem;
+  --fs-h2: 2.875rem;
+  --fs-h3: 2.25rem;
+  --fs-xl: 6rem;
+
+  /* colors */
+  --cls-black: #252525;
+  --cls-yellow: #e9d20f;
+  --cls-light-gray: #c2c2c2;
+  --cls-dark-gray: #e8e8e8;
+  --cls-white: #fff;
+}
+
+/* Remove default box-sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  line-height: 1.6;
+  font-family: var(--ff-merriweather);
+  font-size: var(--fs-base);
+  font-weight: 300;
+  color: var(--cls-black)
+}

@@ -1,0 +1,115 @@
+:root {
+  /* font family */
+  --ff-six-caps: 'Six Caps', sans-serif;
+  --ff-merriweather: 'Merriweather', serif;
+
+  /* font size */
+  --fs-base: 1rem;
+  --fs-h1: 3.75rem;
+  --fs-h2: 2.875rem;
+  --fs-h3: 2.25rem;
+  --fs-xl: 6rem;
+
+  /* colors */
+  --cls-black: #252525;
+  --cls-yellow: #e9d20f;
+  --cls-light-gray: #c2c2c2;
+  --cls-dark-gray: #e8e8e8;
+  --cls-white: #fff;
+}
+
+/* Remove default box-sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  line-height: 1.6;
+  font-family: var(--ff-merriweather);
+  font-size: var(--fs-base);
+  font-weight: 300;
+  color: var(--cls-black);
+  display: grid;
+  grid-template-rows: 5em 40em auto 5em;
+  grid-template-columns: 1fr 5fr 3fr 1fr;
+  grid-template-areas: "header header header header"
+      "hero hero hero hero"
+      ". main aside ."
+      "footer footer footer footer"
+  ;
+}
+
+header {
+  grid-area: header;
+}
+header, footer {
+  background-color: var(--cls-black);
+  color: var(--cls-yellow);
+  font-family: var(--ff-six-caps);
+  font-size: var(--fs-base);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero {
+  grid-area: hero;
+  background: var(--cls-yellow);
+  color: var(--cls-black);
+  font-family: var(--ff-six-caps);
+  font-size: var(--fs-xl);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  grid-area: main;
+}
+.card {
+  display: grid;
+  grid-template-rows: min-content auto;
+  grid-template-columns: 1fr 4fr;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid var(--cls-yellow);
+  grid-template-areas:
+  "cardImage cardTitle"
+  "cardImage cardContent"
+  ;
+}
+
+.card-img {
+  grid-area: cardImage ;
+}
+.card-content {
+  grid-area: cardContent;
+}
+.card-title {
+  grid-area: cardTitle;
+}
+aside {
+  grid-area: aside;
+  background: var(--cls-light-gray);
+  padding: 1rem;
+}
+
+footer {
+  grid-area: footer;
+}
